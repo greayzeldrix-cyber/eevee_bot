@@ -1,0 +1,12 @@
+{
+  "name": "galaxy-eevee-bot",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently -k \"node server.js\" \"vite --host --port 5174\"",
+    "build": "vite build",
+    "start": "vite build && node server.js"
+  },
+  "dependencies": { "react": "^18.3.1", "react-dom": "^18.3.1", "ws": "^8.18.0" },
+  "devDependencies": { "@vitejs/plugin-react": "^4.3.1", "concurrently": "^9.0.0", "vite": "^5.4.0" }
+}

@@ -1,0 +1,106 @@
+{
+  "channel": "zeldrixpuppy",
+  "corner": "right",
+  "scale": 0.5,
+  "cooldownSec": 4,
+  "botName": "galactic_eevee",
+  "botOAuth": "oauth:bnfqr8miiwju62uf5e8lzzfn8m3juv",
+  "replyInChat": true,
+  "commands": [
+    {
+      "id": "hello",
+      "name": "!hello",
+      "enabled": true,
+      "responses": [
+        "Hi {user}! Die Sterne haben dir einen Platz freigehalten.",
+        "{user}! Willkommen in der Galaxie."
+      ],
+      "chatReply": "Willkommen, @{user}! ✦",
+      "fx": "stars",
+      "move": "hop",
+      "ms": 4600,
+      "counter": false
+    },
+    {
+      "id": "pet",
+      "name": "!pet",
+      "enabled": true,
+      "responses": [
+        "{user} krault mich… der ganze Himmel schnurrt. (Streichler #{n})"
+      ],
+      "chatReply": "*schnurrt im Sternenlicht* danke @{user} ♥",
+      "fx": "hearts",
+      "move": "snug",
+      "ms": 4600,
+      "counter": true
+    },
+    {
+      "id": "hug",
+      "name": "!hug",
+      "enabled": true,
+      "responses": [
+        "{user} umarmt mich. Mein Fell ist jetzt zehnmal flauschiger."
+      ],
+      "chatReply": "",
+      "fx": "hearts",
+      "move": "snug",
+      "ms": 4600,
+      "counter": true
+    },
+    {
+      "id": "lurk",
+      "name": "!lurk",
+      "enabled": true,
+      "responses": [
+        "{user} driftet in den Nebel. Sichere Umlaufbahn!"
+      ],
+      "chatReply": "Sichere Umlaufbahn, @{user}! ✦",
+      "fx": "stars",
+      "move": "hop",
+      "ms": 4600,
+      "counter": false
+    }
+  ],
+  "events": {
+    "sub": {
+      "enabled": false,
+      "text": "{user} hat abonniert! Ein neuer Stern ist geboren.",
+      "chatReply": "Danke für das Abo, @{user}! ✦",
+      "fx": "burst",
+      "move": "dance",
+      "ms": 5200
+    },
+    "gift": {
+      "enabled": false,
+      "text": "{user} verschenkt {n} Abo(s)! Es regnet Sterne!",
+      "chatReply": "",
+      "fx": "burst",
+      "move": "dance",
+      "ms": 5200
+    },
+    "raid": {
+      "enabled": true,
+      "text": "RAID von {from} mit {n} Sternen! Willkommen!",
+      "chatReply": "Willkommen, Raider von {from}! ✦",
+      "fx": "burst",
+      "move": "dance",
+      "ms": 5600
+    },
+    "bits": {
+      "enabled": false,
+      "text": "{user} hat {n} Bits gecheert! Pures Sternenstaub.",
+      "chatReply": "",
+      "fx": "burst",
+      "move": "hop",
+      "ms": 4800
+    },
+    "firstMsg": {
+      "enabled": true,
+      "text": "Zum ersten Mal hier, {user}? Willkommen im Kosmos!",
+      "chatReply": "",
+      "fx": "stars",
+      "move": "hop",
+      "ms": 4600
+    }
+  }
+}
